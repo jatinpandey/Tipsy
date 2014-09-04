@@ -1,0 +1,4 @@
+Tipsy
+=====
+
+Slick tip-calculator
