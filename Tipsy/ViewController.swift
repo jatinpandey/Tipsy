@@ -16,11 +16,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var defaultLabel: UILabel!
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         println("view will appear")
         var defaults = NSUserDefaults.standardUserDefaults()
+        var defPerc = defaults.objectForKey("defaultTipPercentage") as Double
+        var defPercDisp = Int(defPerc * 100)
+        defaultLabel.text = "\(defPercDisp)%"
         updateTotal(self)
 
     }
@@ -68,7 +72,7 @@ class ViewController: UIViewController {
         var total = calculateTotal(billAmount
             , tipPercentage: tipPercentage)
         
-        tipLabel.text = String(format: "$%.2f", tipPercentage)
+        tipLabel.text = String(format: "$%.2f", tipPercentage*billAmount)
         totalLabel.text = String(format: "$%.2f", total)
 
     }
