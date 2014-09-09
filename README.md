@@ -18,5 +18,4 @@ b. Save the default percentage in memory and load it by default everytime app lo
 
 Walkthrough of user stories in GIF format: (created with LiceCap)
 
-
-
+![] (TipsyDemo.gif)
