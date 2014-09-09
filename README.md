@@ -13,12 +13,10 @@ Approximately 4 hours
 
 <b>Completed stories</b>: 
 
-a. 
-b. 
-c. 
-
+a. Added Settings page and added label explaining its purpose<br>
+b. Save the default percentage in memory and load it by default everytime app loads
 
 Walkthrough of user stories in GIF format: (created with LiceCap)
 
-a.
+
 
